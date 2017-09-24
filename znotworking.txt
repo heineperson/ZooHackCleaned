@@ -1,0 +1,7 @@
+@ECHO OFF
+
+curl -v -X POST "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories&details={string}&language=en"
+-H "Content-Type: application/json"
+-H "Ocp-Apim-Subscription-Key: {subscription key}"
+
+--data-ascii "{body}"

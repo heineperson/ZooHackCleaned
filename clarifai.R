@@ -1,0 +1,15 @@
+test <- paste0("curl -X POST ",
+'-H "Authorization: Key a71b1ea6e386456397ec8f13aaa5d1a1"',
+'-H "Content-Type: application/json" -d ',
+'  { ',
+'"inputs\": [',
+'{ ',
+'"data": { ',
+'"image": { ',
+'"url": "https://samples.clarifai.com/metro-north.jpg" ',
+'} ',
+'} ',
+'} ',
+'] ',
+'} https://api.clarifai.com/v2/models/aaa03c23b3724a16a56b629203edc62c/outputs')
+system(test)
